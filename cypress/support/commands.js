@@ -30,3 +30,15 @@ Cypress.Commands.add('search', (value) =>{
         cy.get(index.searchButton).click();
     })
 })
+
+Cypress.Commands.add('valid', (value) =>{
+    cy.fixture('searchResult').then((searchResult) => {
+        cy.get(searchResult.title).should('contain',value);
+    })
+})
+
+Cypress.Commands.add('no_valid', (value) =>{
+    cy.fixture('searchResult').then((searchResult) => {
+        cy.get(searchResult.alert).should('contain',value);
+    })
+})
