@@ -4,7 +4,7 @@
   "description": "Pruebas automatizadas del sistema de tienda de ropa",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress run"
   },
   "keywords": [
     "QA",
@@ -18,5 +18,9 @@
   "dependencies": {
     "cypress": "^7.3.0",
     "git": "^0.1.5"
+  },
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/saulgar2/tiendaDeRopaCypress"
   }
 }
